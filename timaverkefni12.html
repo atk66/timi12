@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Functions - Verkefni</title>
+  </head>
+  <body>
+    <h1>Verkefni: JavaScript Functions</h1>
+    <p>
+      Hér eru verkefni þar sem þú átt að skrifa eigin föll (functions) í
+      JavaScript.
+    </p>
+    <hr />
+
+    <!-- Æfing 1 -->
+    <h2>Æfing 1: Kveðja</h2>
+    <p>
+      Gerðu function sem birtir textann "Halló heimur!" þegar ýtt er á takkann.
+    </p>
+    <button onclick="sayHello()">Smelltu hér</button>
+    <p id="aefing1"></p>
+
+    <script>
+      // TODO: Skrifaðu function sem heitir sayHello()
+      // og birtir "Halló heimur!" í elementinu með id="aefing1"
+
+
+      function sayHello() {
+        
+      }
+    
+    
+    
+    </script>
+
+    <hr />
+
+    <!-- Æfing 2 -->
+    <h2>Æfing 2: Nafn og aldur</h2>
+    <p>
+      Sláðu inn nafn og aldur. Gerðu function sem skrifar: "Halló [nafn], þú ert
+      [aldur] ára!"
+    </p>
+    <input id="nameInput" type="text" placeholder="Nafn" />
+    <input id="ageInput" type="number" placeholder="Aldur" />
+    <button onclick="showInfo()">Sýna upplýsingar</button>
+    <p id="aefing2"></p>
+
+    <script>
+      // TODO: Skrifaðu function sem heitir showInfo()
+      // - Les inn gildi úr input (nameInput og ageInput)
+      // - Skrifar "Halló [nafn], þú ert [aldur] ára!" í aefing2
+    </script>
+
+    <hr />
+
+    <!-- Æfing 3 -->
+    <h2>Æfing 3: Samlagning</h2>
+    <p>
+      Gerðu function sem tekur tvær tölur úr input og skrifar summuna þeirra.
+    </p>
+    <input id="num1" type="number" placeholder="Tala 1" />
+    <input id="num2" type="number" placeholder="Tala 2" />
+    <button onclick="addNumbers()">Reikna summu</button>
+    <p id="aefing3"></p>
+
+    <script>
+      // TODO: Skrifaðu function sem heitir addNumbers()
+      // - Les inn tvær tölur (num1 og num2)
+      // - Reiknar summuna og birtir hana í aefing3
+      function addNumbers() {
+        let result = Number(document.getElementById("num1").value) + Number (document.getElementById("num2").value)
+        document.getElementById("aefing3").innerHTML = result
+        }
+    </script>
+
+    <hr />
+
+    <!-- Æfing 4 -->
+    <h2>Æfing 4: Lengd orðs</h2>
+    <p>
+      Gerðu function sem telur hversu margir stafir eru í orðinu sem notandinn
+      skrifar.
+    </p>
+    <input id="wordInput" type="text" placeholder="Sláðu inn orð" />
+    <button onclick="countLetters()">Telja stafi</button>
+    <p id="aefing4"></p>
+
+    <script>
+      // TODO: Skrifaðu function sem heitir countLetters()
+      // - Les inn orðið úr wordInput
+      // - Birtir fjölda stafa í aefing4
+      function countLetters() {
+        let lengd = document.getElementById("wordInput").value.length;
+
+        document.getElementById("aefing4").innerHTML = "Stafafjöldi: " + length
+      }
+    </script>
+
+    <hr />
+
+    <!-- Æfing 5 -->
+    <h2>Æfing 5: Breyta lit</h2>
+    <p>
+      Gerðu function sem breytir litnum á boxinu hér fyrir neðan í þann lit sem
+      notandinn skrifar.
+    </p>
+    <input id="colorInput" type="text" placeholder="t.d. red eða blue" />
+    <button onclick="changeColor()">Breyta lit</button>
+    <div
+      id="colorBox"
+      style="
+        width: 150px;
+        height: 150px;
+        background: lightgray;
+        margin-top: 10px;
+      "
+    ></div>
+
+    <script>
+      // TODO: Skrifaðu function sem heitir changeColor()
+      // - Les inn lit úr colorInput
+      // - Breytir backgroundColor á elementinu colorBox
+      function changeColor() {
+      let color = document.getElementById("colorInput").value
+      document.getElementById("colorBox").style.backgroundColor = color
+      }
+    </script>
+
+    <hr />
+
+    <!-- Æfing 6 -->
+    <h2>Æfing 6: Aukaáskorun 🌟</h2>
+    <p>
+      Búðu til hitastigabreytir sem les gráður í Celsius og breytir í
+      Fahrenheit.<br />
+      Formúla: <code>F = (C * 9/5) + 32</code>
+    </p>
+    <input id="celsius" type="number" placeholder="°C" />
+    <button onclick="convertTemp()">Breyta í Fahrenheit</button>
+    <p id="aefing6"></p>
+
+    <script>
+      // TODO: Skrifaðu function sem heitir convertTemp()
+      // - Les inn gráður úr celsius
+      // - Reiknar F = (C * 9/5) + 32
+      // - Sýnir niðurstöðuna í aefing6
+    </script>
+  </body>
+</html>
