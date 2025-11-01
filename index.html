@@ -39,7 +39,7 @@
             <p>Reikna summu tveggja tala</p>
             <input type="text" id="number1" placeholder="Tala 1"/>
             <input type="text" id="number2" placeholder="Tala 2"/>
-            <button onclick="addNumbers(document.getElementById('number1').value, document.getElementById('number2'))">
+            <button onclick="addNumbers(document.getElementById('number1').value, document.getElementById('number2').value)">
                 Reikna summu</button>
                 <p id="aefing3"></p>
 
@@ -88,18 +88,17 @@
 
             <input id="numInput" type="number" placeholder="Sláð inn tölu" />
             <button onclick="checkEvenOdd()">Skoða</button>
-            <p id="aefing 6"></p>
+            <p id="aefing6"></p>
 
             <script>
-                function checkEvenOdd(){
+                function checkEvenOdd() {
                     let num = document.getElementById("numInput").value
                     let result = num % 2 === 0 ? "Slétt tala" : "Oddatala"
 
                     document.getElementById("aefing6").innerHTML = "Talan er: " + result
                 }
             </script>
-
-        </section>
+            </section>
 
         <section>
             <h1>Æfing 7: Sýna dagsetningu og tíma</h1>

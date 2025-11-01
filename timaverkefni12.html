@@ -24,14 +24,12 @@
       // TODO: Skrifaðu function sem heitir sayHello()
       // og birtir "Halló heimur!" í elementinu með id="aefing1"
 
+            function sayHello() {
+                document.getElementById("aefing1").innerHTML = "Halló heimur!"
+            }
+        </script>
 
-      function sayHello() {
-        
-      }
     
-    
-    
-    </script>
 
     <hr />
 
@@ -50,6 +48,16 @@
       // TODO: Skrifaðu function sem heitir showInfo()
       // - Les inn gildi úr input (nameInput og ageInput)
       // - Skrifar "Halló [nafn], þú ert [aldur] ára!" í aefing2
+
+                function showInfo() {
+                    let name = document.getElementById("nameInput").value
+                    let age = document.getElementById("ageInput").value
+
+                    
+
+                    document.getElementById("aefing2").innerHTML = "Halló " + name + " þú ert " + age + " ára!"
+                }
+
     </script>
 
     <hr />
@@ -90,11 +98,12 @@
       // TODO: Skrifaðu function sem heitir countLetters()
       // - Les inn orðið úr wordInput
       // - Birtir fjölda stafa í aefing4
+      
       function countLetters() {
-        let lengd = document.getElementById("wordInput").value.length;
-
-        document.getElementById("aefing4").innerHTML = "Stafafjöldi: " + length
+        let length = document.getElementById("wordInput").value.length;
+        document.getElementById("aefing4").innerHTML = "Stafafjöldi: " + length;
       }
+
     </script>
 
     <hr />
